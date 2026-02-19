@@ -7,8 +7,8 @@
  *   0.1  : Initial code base, code for INA219's
  *   0.2  : Built in I2C LCD display
  *   0.3  : Debugging switch coded
- *						DCC measuremtn commented out, need different method
- *   0.4  : DCC measuremet built in with ACS712 (5Amp)
+ *						DCC measurement commented out, need different method
+ *   0.4  : DCC measurement built in with ACS712 (5Amp)
  *   1.0  : Everything works, glitches ironed out
  *   1.1  : Improved average readings
  *            ditched ACS712 library
