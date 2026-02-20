@@ -23,4 +23,4 @@ using the Wire library
 
 ![I2C adressing the INA219 modules](./gfx/INA219_addressing.png)
 
-![Test setup](./gfx/Test_Setup.png)
+![Test setup](./gfx/Test_Setup.jpg)
