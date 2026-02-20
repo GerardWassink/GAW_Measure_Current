@@ -10,6 +10,12 @@ Components used are:
 
 ## Notes
 
+### General
+This setup measures the current usage in milli Amperes of my:
+- 5 Volt power supply
+- 12 Volt power supply
+- DCC power from the Z21 command station
+
 ### ACS712
 The ACS712 library did not give very reliable results (or I didn't understand it properly),
 so I ditched the use of that. Instead I found code to address the module myself and implemented that.
