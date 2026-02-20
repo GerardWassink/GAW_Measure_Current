@@ -12,9 +12,13 @@
  *   1.0  : Everything works, glitches ironed out
  *   1.1  : Improved average readings
  *            ditched ACS712 library
+ *   1.2  : Blew up one INA219, replaced it
+ *            changed addressing of the INA219's
+ *            Created the README file
+ *            Added pictures
  *
  *------------------------------------------------------------------------- */
-#define progVersion "1.1"                   // Program version definition 
+#define progVersion "1.2"                   // Program version definition 
 /* ------------------------------------------------------------------------- *
  *             GNU LICENSE CONDITIONS
  * ------------------------------------------------------------------------- *
@@ -48,7 +52,6 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-#include "Arduino_INA219_I2C_No_Library.h"
 #include "LibPrintf.h"                      // use printf, not Serial.print
 
 
@@ -76,8 +79,8 @@
  *     I2C address of the INA219 devices (can be changed by soldering board)
  * ------------------------------------------------------------------------- */
 byte response;
-byte address1 = 0x40;                       //  5V current measurement
-byte address2 = 0x41;                       // 12V current measurement
+byte address1 = 0x41;                       //  5V current measurement
+byte address2 = 0x45;                       // 12V current measurement
 
 
 /* ------------------------------------------------------------------------- *
